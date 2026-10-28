@@ -4,50 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tapiocaria da Paizinha</title>
-<meta name="theme-color" content="#120605">
+<meta name="theme-color" content="#F3E8D6">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap">
 <style>
-:root{--bg:#120605;--red:#C4161C;--red2:#E8353A;--red3:#8E0F13;--cream:#FFEBCB;--mut:#B79A8A;--ban:#F4C95D}
+:root{--bg:#F3E8D6;--red:#C4161C;--red2:#E8353A;--red3:#8E0F13;--ink:#3B2218;--mut:#7D6454;--gold:#B87A08;--line:rgba(90,52,30,.16);--card:#FFFBF3}
 *{box-sizing:border-box}
 html{background:var(--bg)}
-body{margin:0;min-height:100vh;color:var(--cream);font:400 15px/1.5 Inter,system-ui,sans-serif;overflow-x:hidden;background:radial-gradient(800px 460px at 50% -6%,rgba(196,22,28,.38),transparent 62%),radial-gradient(520px 420px at 100% 45%,rgba(244,201,93,.07),transparent 70%),radial-gradient(520px 420px at 0% 80%,rgba(196,22,28,.14),transparent 70%),var(--bg)}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,235,203,.06) 1px,transparent 1.5px);background-size:22px 22px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 22%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 80% 60% at 50% 22%,#000 20%,transparent 75%)}
+body{margin:0;min-height:100vh;color:var(--ink);font:400 15px/1.5 Inter,system-ui,sans-serif;overflow-x:hidden;background:radial-gradient(700px 420px at 50% -8%,rgba(255,255,255,.75),transparent 65%),radial-gradient(520px 420px at 100% 60%,rgba(214,170,100,.18),transparent 70%),var(--bg)}
 .wrap{position:relative;max-width:440px;margin:0 auto;padding:40px 16px 48px;display:flex;flex-direction:column;align-items:center;gap:14px}
-.logo{width:156px;height:156px;border-radius:50%;box-shadow:0 0 0 5px rgba(255,235,203,.12),0 0 44px rgba(196,22,28,.55)}
-h1{margin:6px 0 0;font:400 32px/1.15 Pacifico,cursive;text-align:center;color:var(--cream);text-shadow:0 2px 14px rgba(196,22,28,.6)}
+.logo{width:156px;height:156px;border-radius:50%;box-shadow:0 0 0 5px #fff,0 10px 30px rgba(120,60,30,.28)}
+h1{margin:6px 0 0;font:400 32px/1.15 Pacifico,cursive;text-align:center;color:var(--red3)}
 .bio{margin:0;max-width:30ch;text-align:center;color:var(--mut);font-size:14.5px;text-wrap:balance}
-.rule{width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--ban),transparent);margin:2px 0}
-.btn{position:relative;width:100%;display:flex;align-items:center;gap:14px;padding:15px 16px;border-radius:16px;text-decoration:none;color:var(--cream);border:1px solid rgba(255,235,203,.2);background:linear-gradient(180deg,rgba(40,14,12,.92),rgba(20,8,7,.95));transition:.25s;overflow:hidden;font:inherit;cursor:pointer;text-align:left}
-.btn:hover{transform:translateY(-2px);border-color:var(--red2);box-shadow:0 10px 30px rgba(196,22,28,.3)}
-.ic{flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:#fff;box-shadow:0 5px 16px rgba(0,0,0,.45)}
+.rule{width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:2px 0}
+.btn{position:relative;width:100%;display:flex;align-items:center;gap:14px;padding:15px 16px;border-radius:16px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--card);box-shadow:0 4px 14px rgba(110,70,40,.10);transition:.25s;overflow:hidden;font:inherit;cursor:pointer;text-align:left}
+.btn:hover{transform:translateY(-2px);border-color:var(--red);box-shadow:0 10px 26px rgba(110,70,40,.18)}
+.ic{flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:#fff;box-shadow:0 3px 10px rgba(110,70,40,.18)}
 .ic svg{width:26px;height:26px}
 .ic.r{background:linear-gradient(145deg,var(--red2),var(--red3))}
 .ic.r svg{fill:#fff}
 .t{flex:1;min-width:0}
 .t b{display:block;font:700 16px Inter,sans-serif}
 .t span{display:block;color:var(--mut);font-size:12.8px;margin-top:1px}
-.go{flex:none;color:var(--ban);font:600 20px Inter,sans-serif}
-.main{border-color:var(--red2);background:linear-gradient(135deg,#E8353A,var(--red) 55%,var(--red3));box-shadow:0 10px 30px rgba(196,22,28,.4)}
-.main .t span{color:#FFD9C7}.main .go{color:#fff}
-.main::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-18deg);animation:sheen 5s ease-in-out infinite}
+.go{flex:none;color:var(--red);font:600 20px Inter,sans-serif}
+.hl{padding:20px 16px;border:2px solid #E7A800;background:linear-gradient(135deg,#FFF3C9,#FFFFFF 70%);box-shadow:0 0 0 4px rgba(231,168,0,.18),0 12px 30px rgba(184,122,8,.28)}
+.hl .ic{width:54px;height:54px;border-radius:15px}
+.hl .ic svg{width:32px;height:32px}
+.hl .t b{font-size:18px}
+.hl::before{content:"DESTAQUE";position:absolute;top:0;right:0;padding:3px 12px;border-radius:0 0 0 12px;background:#E7A800;color:#3B2218;font:800 10px Inter,sans-serif;letter-spacing:1.5px}
+.hl::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-18deg);animation:sheen 4.5s ease-in-out infinite}
+.main{border-color:var(--red2);color:#fff;background:linear-gradient(135deg,#E8353A,var(--red) 55%,var(--red3));box-shadow:0 10px 26px rgba(196,22,28,.35)}
+.main .t span{color:#FFE2D4}.main .go{color:#fff}
 @keyframes sheen{0%,55%{left:-60%}100%{left:130%}}
-.stars{color:var(--ban);letter-spacing:2px;font-size:13px;font-style:normal}
-.menu{width:100%;display:none;flex-direction:column;gap:10px;border-radius:18px;border:1px solid rgba(255,235,203,.2);background:linear-gradient(180deg,rgba(40,14,12,.95),rgba(20,8,7,.97));padding:16px}
+.stars{color:#E7A800;letter-spacing:2px;font-size:14px;font-style:normal}
+.menu{width:100%;display:none;flex-direction:column;gap:10px;border-radius:18px;border:1px solid var(--line);background:var(--card);box-shadow:0 4px 14px rgba(110,70,40,.10);padding:16px}
 .menu.open{display:flex}
-.menu h2{margin:0;font:400 22px Pacifico,cursive;text-align:center}
+.menu h2{margin:0;font:400 22px Pacifico,cursive;text-align:center;color:var(--red3)}
 .menu p{margin:0 0 4px;text-align:center;color:var(--mut);font-size:13px}
-.it{display:flex;align-items:center;gap:12px;padding:12px;border-radius:14px;border:1px solid rgba(255,235,203,.14);background:rgba(196,22,28,.07)}
+.it{display:flex;align-items:center;gap:12px;padding:12px;border-radius:14px;border:1px solid var(--line);background:#FBF1DF}
 .in{flex:1;min-width:0}
 .in b{display:block;font:600 14.5px Inter,sans-serif}
 .in span{display:block;color:var(--mut);font-size:12.5px}
-.in i{display:block;margin-top:2px;color:var(--ban);font:600 13.5px Inter,sans-serif;font-style:normal}
+.in i{display:block;margin-top:2px;color:var(--red);font:700 13.5px Inter,sans-serif;font-style:normal}
 .it a{flex:none;display:flex;align-items:center;gap:6px;padding:10px 14px;border-radius:11px;background:#25D366;color:#06260f;font:700 13.5px Inter,sans-serif;text-decoration:none}
 .it a:hover{filter:brightness(1.08)}
 .all{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;border-radius:13px;background:#25D366;color:#06260f;font:700 15px Inter,sans-serif;text-decoration:none}
 .all svg{width:22px;height:22px}.all svg path{fill:#06260f}
-.btn:focus-visible,.it a:focus-visible,.all:focus-visible{outline:2px solid var(--ban);outline-offset:3px}
+.btn:focus-visible,.it a:focus-visible,.all:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 .foot{margin-top:10px;text-align:center;color:var(--mut);font-size:12.5px;line-height:1.7}
-.foot b{display:block;color:var(--ban);font:400 18px Pacifico,cursive;margin-bottom:2px}
+.foot b{display:block;color:var(--red3);font:400 18px Pacifico,cursive;margin-bottom:2px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -57,7 +61,7 @@ h1{margin:6px 0 0;font:400 32px/1.15 Pacifico,cursive;text-align:center;color:va
 <h1>Tapiocaria da Paizinha</h1>
 <p class="bio">Tapiocas fresquinhas, feitas na hora &#127860; Peça pelo WhatsApp</p>
 <div class="rule"></div>
-<a class="btn main" href="https://wa.me/+5577999656819?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20links%20da%20Tapiocaria%20da%20Paizinha%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><div class="t"><b>Pedir pelo WhatsApp</b><span>(77) 99965-6819</span></div><span class="go">→</span></a>
+<a class="btn hl" href="https://search.google.com/local/writereview?placeid=ChIJdfjYAkiLXwcR68Gc_JdKSJY" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><div class="t"><b>Avalie no Google</b><span><em class="stars">★★★★★</em> &nbsp;Sua opinião vale ouro</span></div><span class="go">→</span></a>
 <button class="btn" type="button" id="mb" aria-expanded="false" aria-controls="mn"><span class="ic r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm2 5v2h8V7H8Zm0 4v2h8v-2H8Zm0 4v2h5v-2H8Z"/></svg></span><div class="t"><b>Cardápio</b><span>Veja as opções e peça pelo WhatsApp</span></div><span class="go" id="ma">+</span></button>
 <section class="menu" id="mn" aria-label="Cardápio">
 <h2>Cardápio</h2>
@@ -70,8 +74,8 @@ h1{margin:6px 0 0;font:400 32px/1.15 Pacifico,cursive;text-align:center;color:va
 <div class="it"><div class="in"><b>Tapioca de chocolate</b><span>Chocolate com morango</span><i>R$ 00,00</i></div><a href="https://wa.me/+5577999656819?text=Ol%C3%A1%21%20Quero%20pedir%3A%20Tapioca%20de%20chocolate." target="_blank" rel="noopener">Pedir</a></div>
 <a class="all" href="https://wa.me/+5577999656819?text=Ol%C3%A1%21%20Vi%20o%20card%C3%A1pio%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Fazer pedido pelo WhatsApp</a>
 </section>
+<a class="btn main" href="https://wa.me/+5577999656819?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20links%20da%20Tapiocaria%20da%20Paizinha%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><div class="t"><b>Pedir pelo WhatsApp</b><span>(77) 99965-6819</span></div><span class="go">→</span></a>
 <a class="btn" href="https://www.instagram.com/tapiocaria_paizinha/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".25" stop-color="#FA7E1E"/><stop offset=".5" stop-color="#D62976"/><stop offset=".75" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><path fill="url(#g)" d="M7.5 1h9A6.5 6.5 0 0 1 23 7.5v9a6.5 6.5 0 0 1-6.5 6.5h-9A6.5 6.5 0 0 1 1 16.5v-9A6.5 6.5 0 0 1 7.5 1Zm0 2A4.5 4.5 0 0 0 3 7.5v9A4.5 4.5 0 0 0 7.5 21h9a4.5 4.5 0 0 0 4.5-4.5v-9A4.5 4.5 0 0 0 16.5 3h-9ZM12 6.9a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2Zm0 2a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.3-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></span><div class="t"><b>Instagram</b><span>@tapiocaria_paizinha</span></div><span class="go">→</span></a>
-<a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJdfjYAkiLXwcR68Gc_JdKSJY" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><div class="t"><b>Avalie no Google</b><span><em class="stars">★★★★★</em> &nbsp;Sua opinião importa</span></div><span class="go">→</span></a>
 <a class="btn" href="https://maps.app.goo.gl/Chj4FYXW2NexSFqZA" target="_blank" rel="noopener"><span class="ic r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span><div class="t"><b>Localização</b><span>Como chegar à tapiocaria</span></div><span class="go">→</span></a>
 <footer class="foot"><b>Feita com carinho</b>© Tapiocaria da Paizinha</footer>
 </main>
